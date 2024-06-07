@@ -20,7 +20,11 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginRight="10dp"
-            android:backgroundTint="#EF497B">
+            android:backgroundTint="#EF497B"
+            android:checkable="true"
+            android:clickable="true"
+            android:focusable="true"
+            >
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -32,7 +36,7 @@
                     android:layout_height="150dp"
                     android:layout_marginLeft="35dp"
                     android:src="@drawable/torre"
-                    android:layout_marginTop=""/>
+                  />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -70,7 +74,11 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginRight="10dp"
-            android:backgroundTint="#FF7A51">
+            android:backgroundTint="#FF7A51"
+            android:checkable="true"
+            android:clickable="true"
+            android:focusable="true"
+            >
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -120,7 +128,9 @@
             android:layout_marginTop="10dp"
             android:layout_marginRight="10dp"
             android:backgroundTint="#31BDBC"
-
+            android:checkable="true"
+            android:clickable="true"
+            android:focusable="true"
             >
 
             <LinearLayout
@@ -171,7 +181,9 @@
             android:layout_marginTop="10dp"
             android:layout_marginRight="10dp"
             android:backgroundTint="#45B64A"
-
+            android:checkable="true"
+            android:clickable="true"
+            android:focusable="true"
             >
 
             <LinearLayout
