@@ -41,7 +41,11 @@
                 android:textSize="16dp"
                 android:textStyle="bold" />
 
-
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
             <me.zhanghai.android.materialratingbar.MaterialRatingBar
                 android:id="@+id/idRatingBar"
                 style="@style/Widget.AppCompat.RatingBar.Indicator"
@@ -79,7 +83,7 @@
                 android:src="@drawable/baseline_bookmark" />
 
 
-
+            </LinearLayout>
 
         </LinearLayout>
 
