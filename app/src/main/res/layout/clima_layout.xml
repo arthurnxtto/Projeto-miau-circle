@@ -61,9 +61,28 @@
                 android:layout_toRightOf="@+id/idTextGrau"
                 android:layout_marginTop="20dp"
                 android:textSize="20dp"
+                android:id="@+id/idTextSeta"/>
 
-                />
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/cloud"
+                android:layout_toRightOf="@+id/idTextCurrent"
+                android:layout_marginLeft="70dp"
+                android:tint="@color/white"
+                android:layout_marginTop="30dp"
+                android:id="@+id/idImgNuvem"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/idImgNuvem"
+                android:text="11:25 AM"
+                android:textColor="@color/white"
+                android:layout_marginLeft="110dp"
+                android:layout_toRightOf="@+id/idTextSeta"
 
+                android:layout_marginTop="5dp"
+                android:textSize="20dp" />
 
         </RelativeLayout>
 
