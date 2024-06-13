@@ -21,21 +21,48 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Assam"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="50dp"
+                />
 
             <TextView
+                android:id="@+id/idTextCurrent"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/idTextAssam"
                 android:text="Current Location"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_marginLeft="50dp"
+
+                />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/idTextAssam"
-                android:text="Current Location"
-                android:textColor="@color/white" />
+                android:layout_below="@id/idTextCurrent"
+                android:text="25°"
+                android:textColor="@color/white"
+                android:layout_marginLeft="50dp"
+               android:textSize="40dp"
+                android:id="@+id/idTextGrau"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/idTextCurrent"
+                android:text="-> 18°"
+                android:textColor="@color/white"
+                android:layout_marginLeft="-5dp"
+                android:layout_toRightOf="@+id/idTextGrau"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp"
+
+                />
 
 
         </RelativeLayout>
