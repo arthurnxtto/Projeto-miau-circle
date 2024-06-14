@@ -5,11 +5,14 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".ClimaActivity">
 
     <com.google.android.material.card.MaterialCardView
+        android:id="@+id/idCardAssam"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="230dp"
+        android:layout_margin="10dp"
         android:backgroundTint="#5A32AC">
 
         <RelativeLayout
@@ -20,68 +23,245 @@
                 android:id="@+id/idTextAssam"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="30dp"
                 android:text="Assam"
                 android:textColor="@color/white"
-                android:textSize="40dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginLeft="50dp"
-                />
+                android:textSize="40dp" />
 
             <TextView
                 android:id="@+id/idTextCurrent"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/idTextAssam"
+                android:layout_marginLeft="50dp"
                 android:text="Current Location"
                 android:textColor="@color/white"
                 android:textSize="20dp"
-                android:layout_marginLeft="50dp"
+
 
                 />
 
             <TextView
+                android:id="@+id/idTextGrau"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/idTextCurrent"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="30dp"
                 android:text="25°"
                 android:textColor="@color/white"
-                android:layout_marginLeft="50dp"
-               android:textSize="40dp"
-                android:id="@+id/idTextGrau"
-                />
+                android:textSize="40dp" />
 
 
             <TextView
+                android:id="@+id/idTextSeta"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/idTextCurrent"
-                android:text="-> 18°"
-                android:textColor="@color/white"
                 android:layout_marginLeft="-5dp"
+                android:layout_marginTop="50dp"
                 android:layout_toRightOf="@+id/idTextGrau"
-                android:layout_marginTop="20dp"
+                android:text="-> 18%"
+                android:textColor="@color/white"
                 android:textSize="20dp"
-                android:id="@+id/idTextSeta"/>
+
+                />
 
             <ImageView
+                android:id="@+id/idImgNuvem"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/cloud"
-                android:layout_toRightOf="@+id/idTextCurrent"
                 android:layout_marginLeft="70dp"
-                android:tint="@color/white"
                 android:layout_marginTop="30dp"
-                android:id="@+id/idImgNuvem"/>
+                android:layout_toRightOf="@+id/idTextCurrent"
+                android:src="@drawable/cloud"
+                android:tint="@color/white" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/idImgNuvem"
-                android:text="11:25 AM"
-                android:textColor="@color/white"
                 android:layout_marginLeft="110dp"
+                android:layout_marginTop="15dp"
                 android:layout_toRightOf="@+id/idTextSeta"
+                android:text="11:25 AM"
 
-                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/idCardDelhi"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_below="@+id/idCardAssam"
+        android:layout_margin="10dp"
+        android:backgroundTint="#009FC7">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/idTextDelhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="30dp"
+                android:text="Delhi"
+                android:textColor="@color/white"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/idTextDays"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/idTextDelhi"
+                android:layout_marginLeft="50dp"
+                android:text="2 days ago"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+
+
+                />
+
+            <TextView
+                android:id="@+id/idTextGrauII"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idTextDays"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="30dp"
+                android:text="39°"
+                android:textColor="@color/white"
+                android:textSize="40dp" />
+
+
+            <TextView
+                android:id="@+id/idTextSetaII"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/idTextDays"
+                android:layout_marginLeft="-5dp"
+                android:layout_marginTop="50dp"
+                android:layout_toRightOf="@+id/idTextGrauII"
+                android:text="-> 35%"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+
+                />
+
+            <ImageView
+                android:id="@+id/idImgSun"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/idTextDays"
+                android:src="@drawable/sun"
+                android:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/idImgSun"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/idTextSetaII"
+                android:text="01:05 PM"
+
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/idCardDarjeeling"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_below="@+id/idCardDelhi"
+        android:layout_margin="10dp"
+        android:backgroundTint="#85C94C">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/idTextDarjeeling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="30dp"
+                android:text="Darjeeling"
+                android:textColor="@color/white"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/idTextWeeks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/idTextDarjeeling"
+                android:layout_marginLeft="50dp"
+                android:text="2 weeks ago"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+
+
+                />
+
+            <TextView
+                android:id="@+id/idTextGrauIII"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idTextWeeks"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="30dp"
+                android:text="12°"
+                android:textColor="@color/white"
+                android:textSize="40dp" />
+
+
+            <TextView
+                android:id="@+id/idTextSetaIII"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/idTextWeeks"
+                android:layout_marginLeft="-5dp"
+                android:layout_marginTop="50dp"
+                android:layout_toRightOf="@+id/idTextGrauIII"
+                android:text="-> 9%"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+
+                />
+
+            <ImageView
+                android:id="@+id/idImgRain"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/idTextWeeks"
+                android:src="@drawable/rain"
+                android:tint="@color/white" />
+-
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/idImgRain"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/idTextSetaIII"
+                android:text="05:00 AM"
+
+                android:textColor="@color/white"
                 android:textSize="20dp" />
 
         </RelativeLayout>
